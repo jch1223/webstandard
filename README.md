@@ -5,7 +5,7 @@
 
 # layout 01
 
-<img width="300px" height="300px" src='/img/01.png' />
+<img width="300px" height="300px" src='/img/01.PNG' />
 
 # layout 02
 
