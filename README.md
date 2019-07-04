@@ -5,33 +5,33 @@
 
 # layout 01
 
-<img width="300px" height="300px" src='./img/01.png' />
+<img width="300px" height="300px" src='/img/01.PNG' />
 
 # layout 02
 
-<img width="300px" height="300px" src='./img/02.png' />
+<img width="300px" height="300px" src='/img/02.PNG' />
 
 # layout 03
 
-<img width="300px" height="300px" src='./img/03.png' />
+<img width="300px" height="300px" src='/img/03.PNG' />
 
 # layout 04
 
-<img width="300px" height="300px" src='./img/04.png' />
+<img width="300px" height="300px" src='/img/04.PNG' />
 
 # layout 05
 
-<img width="300px" height="300px" src='./img/05-1.png' />
-<img width="400px" height="300px" src='./img/05-2.png' />
+<img width="300px" height="300px" src='/img/05-1.PNG' />
+<img width="400px" height="300px" src='/img/05-2.PNG' />
 
 # layout 06
 
 inherit를 통해 부모의 속성을 상속
 
-<img width="300px" height="300px" src='./img/06.png' />
+<img width="300px" height="300px" src='/img/06.PNG' />
 
 # layout 07
 
 layout06 각 layout 세분화
 
-<img width="300px" height="300px" src='./img/07.png' />
+<img width="300px" height="300px" src='/img/07.PNG' />
