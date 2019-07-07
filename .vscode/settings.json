@@ -1,4 +1,5 @@
 {
-  "prettier.disableLanguages": ["html"],
-  "prettier.stylelintIntegration": true
+  // "prettier.disableLanguages": ["html"],
+  "prettier.stylelintIntegration": true,
+  "editor.acceptSuggestionOnEnter": "off"
 }
