@@ -45,7 +45,19 @@
             </div>
             <!-- //header title -->
 
-            <div class="header-icon"></div>
+            <!-- 이미지를 표현하는 방법
+              1. img태그 : 의미가 있는 것 ( 단어, 고유 명사 등) / alt 태그를 이용해 대체 문자가 표현됨
+              2. background 속성 : 의미가 없는 것 - 대체 문자가 필요없음
+              3. 이미지를 background 속성 - 웹표준을 준수하기 위해 아래의 작업
+                    가상으로 대체 문자를 만들어줌 ( IR 효과 )
+                    이미지 스프라이트 
+            -->
+            <div class="header-icon">
+              <a href="#" class="icon1"> <span>icon1</span></a>
+              <a href="#"class="icon2"> <span>icon2</span></a>
+              <a href="#" class="icon3"> <span>icon3</span></a>
+              <a href="#" class="icon4"> <span>icon4</span></a>
+            </div>
             <!-- //header icon -->
           </div>
         </div>
