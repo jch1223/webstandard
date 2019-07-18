@@ -54,9 +54,8 @@
 .nav > div:last-child { width: 20%} /* ie9부터 사용 */
 .nav > div h3 { font-size: 18px; color: #25a2d0; margin-bottom: 4px;}
 .nav > div { overflow: hidden;}
-.nav > div ol li { width: 50%; float: left;}
+.nav > div ol li { width: 50%; }
 .nav > div:last-child ol li { width: 100%;}
-.nav > div ol li:hover { text-decoration: underline; }
 
 /* 타이틀 */
 .title { position: relative; }
