@@ -1,202 +1,199 @@
 <!DOCTYPE html>
 <html lang="ko">
-  <head>
-    <meta charset="UTF-8" />
-    <!-- 작성자 -->
-    <meta name="author" content="jcon" />
-    <!-- 검색시 등장 -->
-    <meta name="description" content="웹 표준을 준수한 사이트 예제" />
-    <!-- 검색 키워드 seo -->
-    <meta name="keywords" content="웹표준, 웹접근성, 사이트 만들기" />
-    <meta name="generator" content="visual sutudio code" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>JANG CHUL HEE</title>
 
-    <!-- css style -->
-    <link rel="stylesheet" href="css/reset.css" />
-    <link rel="stylesheet" href="css/style.css" />
+<head>
+  <meta charset="UTF-8" />
+  <!-- 작성자 -->
+  <meta name="author" content="jcon" />
+  <!-- 검색시 등장 -->
+  <meta name="description" content="웹 표준을 준수한 사이트 예제" />
+  <!-- 검색 키워드 seo -->
+  <meta name="keywords" content="웹표준, 웹접근성, 사이트 만들기" />
+  <meta name="generator" content="visual sutudio code" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>JANG CHUL HEE</title>
 
-    <!-- 웹 폰트 -->
-    <link
-      href="https://fonts.googleapis.com/css?family=Nanum+Gothic&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Nanum+Brush+Script&display=swap"
-      rel="stylesheet"
-    />
-  </head>
+  <!-- css style -->
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/style.css" />
 
-  <body>
-    <!-- 스킵 네비게이션 -->
-    <div id="skip">
-      <a href="#cont_nav">전체 매뉴 바로가기</a>
-      <a href="#cont_banner">배너 영역 바로가기</a>
-      <a href="#cont_contents">컨텐츠 영역 바로가기</a>
-    </div>
+  <!-- 웹 폰트 -->
+  <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Nanum+Brush+Script&display=swap" rel="stylesheet" />
+</head>
 
-    <div id="wrap">
-      <div id="header">
-        <div class="container">
-          <div class="header">
-            <div class="header-menu">
-              <a href="https://github.com/jch1223" target="_blank">Github</a>
-              <a href="https://jcon.tistory.com/" target="_blank">Blog</a>
-              <a
-                href="https://www.notion.so/jch1223/f38268df5c184d8c8da052c7c1a43cc1?v=cefdcaf341714380bbb003086aad9776"
-                target="_blank"
-              >
-                TIL
-              </a>
-            </div>
-            <!-- //header menu -->
+<body>
+  <!-- 스킵 네비게이션 -->
+  <div id="skip">
+    <a href="#cont_nav">전체 매뉴 바로가기</a>
+    <a href="#cont_banner">배너 영역 바로가기</a>
+    <a href="#cont_contents">컨텐츠 영역 바로가기</a>
+  </div>
 
-            <div class="header-title">
-              <h1>FrontEnd Developer</h1>
-              <br />
-              <a href="/">JANG CHUL HEE</a>
-            </div>
-            <!-- //header title -->
+  <div id="wrap">
+    <div id="header">
+      <div class="container">
+        <div class="header">
+          <div class="header-menu">
+            <a href="https://github.com/jch1223" target="_blank">Github</a>
+            <a href="https://jcon.tistory.com/" target="_blank">Blog</a>
+            <a href="https://www.notion.so/jch1223/f38268df5c184d8c8da052c7c1a43cc1?v=cefdcaf341714380bbb003086aad9776"
+              target="_blank">
+              TIL
+            </a>
+          </div>
+          <!-- //header menu -->
 
-            <!-- 이미지를 표현하는 방법
+          <div class="header-title">
+            <h1>FrontEnd Developer</h1>
+            <br />
+            <a href="/">JANG CHUL HEE</a>
+          </div>
+          <!-- //header title -->
+
+          <!-- 이미지를 표현하는 방법
               1. img태그 : 의미가 있는 것 ( 단어, 고유 명사 등) / alt 태그를 이용해 대체 문자가 표현됨
               2. background 속성 : 의미가 없는 것 - 대체 문자가 필요없음
               3. 이미지를 background 속성 - 웹표준을 준수하기 위해 아래의 작업
                     가상으로 대체 문자를 만들어줌 ( IR 효과 )
                     이미지 스프라이트 
             -->
-            <div class="header-icon">
-              <a href="#" class="icon1"> <span class="ir_pm">icon1</span></a>
-              <a href="#" class="icon2"> <span class="ir_pm">icon2</span></a>
-              <a href="#" class="icon3"> <span class="ir_pm">icon3</span></a>
-              <a href="#" class="icon4"> <span class="ir_pm">icon4</span></a>
-            </div>
-            <!-- //header icon -->
+          <div class="header-icon">
+            <a href="#" class="icon1"> <span class="ir_pm">icon1</span></a>
+            <a href="#" class="icon2"> <span class="ir_pm">icon2</span></a>
+            <a href="#" class="icon3"> <span class="ir_pm">icon3</span></a>
+            <a href="#" class="icon4"> <span class="ir_pm">icon4</span></a>
           </div>
+          <!-- //header icon -->
         </div>
       </div>
-      <!-- //header  -->
-
-      <div id="contents">
-        <div id="cont_nav">
-          <div class="container">
-            <h2 class="ir_su">전체 메뉴</h2>
-            <div class="nav">
-              <div>
-                <h3>Front</h3>
-                <ol>
-                  <li><span>JavaScript(ES5/ES6)</a></li>
-                  <li><span>React</span></li>
-                  <li><span>HTML</span></li>
-                  <li><span>CSS</span></li>
-                </ol>
-              </div>
-              <div>
-                <h3>Back</h3>
-                <ol>
-                  <li><span>node.js(express)</span></li>
-                  <li><span>PHP</span></li>
-                  <li><span>mySQL</span></li>
-                </ol>
-              </div>
-              <div class="last">
-                <h3>Development Tools</h3>
-                <ol>
-                  <li><span>Git</span></li>
-                  <li><span>AWS</span></li>
-                </ol>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- //cont nav -->
-
-        <div id="cont_title">
-          <div class="container">
-            <div class="title">
-              <h2>"잘하는 것도 중요하지만 자라자!"</h2>
-              <a href="#" class="btn"><span class="ir_pm">전체 메뉴</span></a>
-            </div>
-          </div>
-        </div>
-        <!-- //cont title -->
-
-        <div id="cont_banner">
-          <div class="container">
-            <div class="banner">
-              <a href="#" class="prev"
-                ><span class="ir_pm">이전 이미지</span></a
-              >
-              <ul>
-                <li class="banner_img1">
-                  <a href="#"
-                    ><img src="img/banner_link1.jpg" alt="웹 표준 지집서 보기"
-                  /></a>
-                </li>
-                <li class="banner_img2">
-                  <a href="#"
-                    ><img src="img/banner_link2.jpg" alt="css 버튼 만들기"
-                  /></a>
-                </li>
-                <li class="banner_img3">
-                  <a href="#"
-                    ><img src="img/banner_link3.jpg" alt="로그인 폼 만들기"
-                  /></a>
-                </li>
-              </ul>
-              <a href="#" class="next"
-                ><span class="ir_pm">다음 이미지</span></a
-              >
-            </div>
-          </div>
-        </div>
-        <!-- //cont banner -->
-
-        <div id="cont_contents">
-          <div class="container">
-            <div class="cont">
-              <div class="column col1">
-                <h3><span class="ico_img ir_pm">아이콘</span><span class="ico_title">Notice</span></h3>
-                <p class="ico_desc">가장 웹 페이지에서 기본이 되는 게시판 유형입니다</p>
-              </div>
-              <!-- col1 -->
-              <div class="column col2">
-                <h3><span class="ico_img ir_pm">아이콘</span><span class="ico_title">Notice</span></h3>
-                <p class="ico_desc">가장 웹 페이지에서 기본이 되는 게시판 유형입니다</p>
-              </div>
-              <!-- col2 -->
-              <div class="column col3">
-                <h3><span class="ico_img ir_pm">아이콘</span><span class="ico_title">Notice</span></h3>
-                <p class="ico_desc">가장 웹 페이지에서 기본이 되는 게시판 유형입니다</p>
-              </div>
-              <!-- col3 -->
-              <div class="column col4">
-                <h3><span class="ico_img ir_pm">아이콘</span><span class="ico_title">Notice</span></h3>
-                <p class="ico_desc">가장 웹 페이지에서 기본이 되는 게시판 유형입니다</p>
-              </div>
-              <!-- col4 -->
-              <div class="column col5">
-                <h3><span class="ico_img ir_pm">아이콘</span><span class="ico_title">Notice</span></h3>
-                <p class="ico_desc">가장 웹 페이지에서 기본이 되는 게시판 유형입니다</p>
-              </div>
-              <!-- col5 -->
-              <div class="column col6">
-                <h3><span class="ico_img ir_pm">아이콘</span><span class="ico_title">Notice</span></h3>
-                <p class="ico_desc">가장 웹 페이지에서 기본이 되는 게시판 유형입니다</p>
-              </div>
-              <!-- col6 -->
-            </div>
-            </div>
-        </div>
-        <!-- //cont contents -->
-      </div>
-      <!-- //contents -->
-
-      <div id="footer">
-        <div class="container">footer</div>
-      </div>
-      <!-- //footer -->
     </div>
-  </body>
+    <!-- //header  -->
+
+    <div id="contents">
+      <div id="cont_nav">
+        <div class="container">
+          <h2 class="ir_su">전체 메뉴</h2>
+          <div class="nav">
+            <div>
+              <h3>Front</h3>
+              <ol>
+                <li><span>JavaScript(ES5/ES6)</a></li>
+                <li><span>React</span></li>
+                <li><span>HTML</span></li>
+                <li><span>CSS</span></li>
+              </ol>
+            </div>
+            <div>
+              <h3>Back</h3>
+              <ol>
+                <li><span>node.js(express)</span></li>
+                <li><span>PHP</span></li>
+                <li><span>mySQL</span></li>
+              </ol>
+            </div>
+            <div class="last">
+              <h3>Development Tools</h3>
+              <ol>
+                <li><span>Git</span></li>
+                <li><span>AWS</span></li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- //cont nav -->
+
+      <div id="cont_title">
+        <div class="container">
+          <div class="title">
+            <h2>"잘하는 것도 중요하지만 자라자!"</h2>
+            <a href="#" class="btn"><span class="ir_pm">전체 메뉴</span></a>
+          </div>
+        </div>
+      </div>
+      <!-- //cont title -->
+
+      <div id="cont_banner">
+        <div class="container">
+          <div class="banner">
+            <a href="#" class="prev"><span class="ir_pm">이전 이미지</span></a>
+            <ul>
+              <li class="banner_img1">
+                <a href="#"><img src="img/banner_link1.jpg" alt="웹 표준 지집서 보기" /></a>
+              </li>
+              <li class="banner_img2">
+                <a href="#"><img src="img/banner_link2.jpg" alt="css 버튼 만들기" /></a>
+              </li>
+              <li class="banner_img3">
+                <a href="#"><img src="img/banner_link3.jpg" alt="로그인 폼 만들기" /></a>
+              </li>
+            </ul>
+            <a href="#" class="next"><span class="ir_pm">다음 이미지</span></a>
+          </div>
+        </div>
+      </div>
+      <!-- //cont banner -->
+
+      <div id="cont_contents">
+        <div class="container">
+          <div class="cont">
+            <div class="column col1">
+              <h3><span class="ico_img ir_pm">아이콘</span><span class="ico_title">Notice</span></h3>
+              <p class="ico_desc">가장 웹 페이지에서 기본이 되는 게시판 유형입니다</p>
+              <!-- 게시판 -->
+              <div class="notice">
+                <h4>frontend notice</h4>
+                <ul>
+                  <li><a href="#">display:inline과 display:block의 차이점은 무엇인가요?</a></li>
+                  <li><a href="#">HTML 태그 중에 dl,dd,ul,ol,li의 차이점이 무엇인가요?</a></li>
+                  <li><a href="#">HTML 태그 중에 strong과 em 태그의 차이점은 무엇인가요?</a></li>
+                  <li><a href="#">컨텐츠 요소를 가운데로 오게 하는 방법을 알려주세요!</a></li>
+                  <li><a href="#">독타입을 선언하는 이유에 대해서 설명하세요.</a></li>
+                </ul>
+                <a href="#" class="more ir_pm" title="더보기">더보기</a>
+              </div>
+              <!-- //게시판 -->
+            </div>
+            <!-- col1 -->
+            <div class="column col2">
+              <h3><span class="ico_img ir_pm">아이콘</span><span class="ico_title">Notice</span></h3>
+              <p class="ico_desc">가장 웹 페이지에서 기본이 되는 게시판 유형입니다</p>
+            </div>
+            <!-- col2 -->
+            <div class="column col3">
+              <h3><span class="ico_img ir_pm">아이콘</span><span class="ico_title">Notice</span></h3>
+              <p class="ico_desc">가장 웹 페이지에서 기본이 되는 게시판 유형입니다</p>
+            </div>
+            <!-- col3 -->
+            <div class="column col4">
+              <h3><span class="ico_img ir_pm">아이콘</span><span class="ico_title">Notice</span></h3>
+              <p class="ico_desc">가장 웹 페이지에서 기본이 되는 게시판 유형입니다</p>
+            </div>
+            <!-- col4 -->
+            <div class="column col5">
+              <h3><span class="ico_img ir_pm">아이콘</span><span class="ico_title">Notice</span></h3>
+              <p class="ico_desc">가장 웹 페이지에서 기본이 되는 게시판 유형입니다</p>
+            </div>
+            <!-- col5 -->
+            <div class="column col6">
+              <h3><span class="ico_img ir_pm">아이콘</span><span class="ico_title">Notice</span></h3>
+              <p class="ico_desc">가장 웹 페이지에서 기본이 되는 게시판 유형입니다</p>
+            </div>
+            <!-- col6 -->
+          </div>
+        </div>
+      </div>
+      <!-- //cont contents -->
+    </div>
+    <!-- //contents -->
+
+    <div id="footer">
+      <div class="container">footer</div>
+    </div>
+    <!-- //footer -->
+  </div>
+</body>
+
 </html>
