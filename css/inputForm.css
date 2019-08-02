@@ -1,0 +1,139 @@
+/* range input */
+#drive-range {
+    -webkit-appearance: none;
+    -moz-apperance: none;
+    border-radius: 6px;
+    height: 3px;
+
+    background-image: -webkit-gradient(linear, 0% 0%, 100% 0%, color-stop(0.5, #32acb3), color-stop(0.5, #eee));
+
+    background-image: -moz-linear-gradient(left center,
+            #32acb3 0%, #32acb3 50%,
+            #eee 50%, #eee 100%);
+}
+
+#drive-range::-moz-range-track {
+    border: none;
+    background: none;
+    outline: none;
+}
+
+#drive-range:focus {
+    outline: none;
+    border: none;
+}
+
+#drive-range::-webkit-slider-thumb {
+    -webkit-appearance: none !important;
+    background-color: #32acb3;
+    height: 24px;
+    width: 24px;
+    border-radius: 50%;
+}
+
+#drive-range::-moz-range-thumb {
+    -moz-appearance: none !important;
+    background-color: #32acb3;
+    border: none;
+    height: 24px;
+    width: 24px;
+    border-radius: 50%;
+}
+
+/* //range input */
+
+/* radio grid */
+label {
+    margin: 0;
+    cursor: pointer;
+}
+
+.wrapper {
+    display: flex;
+    /* 내부 flex 속성의 배치 */
+    flex-direction: column;
+}
+
+.grid-row {
+    background: url("../img/line_bg.png");
+    height: 35px;
+}
+
+.grid-row,
+.grid-footer {
+    display: flex;
+}
+
+
+
+.flex-item {
+    display: flex;
+    width: 33%;
+    justify-content: center;
+    align-items: center;
+    font-weight: normal;
+    color: #999;
+}
+
+.flex-item:first-child {
+    width: 17%
+}
+
+.flex-item:last-child {
+    width: 17%
+}
+
+.flex-item span {
+    background: #fff;
+}
+
+.footer-item {
+    width: 33%;
+    text-align: center;
+}
+
+.footer-item:first-child {
+    width: 17%
+}
+
+.footer-item:last-child {
+    width: 17%
+}
+
+/* 6ea item  */
+.item_6 .flex-item {
+    width: 25%;
+}
+
+.item_6 .footer-item {
+    width: 25%;
+}
+
+/* // 6ea item */
+
+[type="radio"] {
+    /* 특정 부분만 나오게 하는 clip */
+    clip: rect(0 0 0 0);
+    height: 1px;
+    width: 1px;
+    margin: -1px;
+    overflow: hidden;
+    position: absolute;
+}
+
+[type="radio"]+span:before {
+    content: '';
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    box-shadow: 0 0 0 2px #32acb3;
+    transition: 0.5s ease all;
+}
+
+[type="radio"]:checked+span:before {
+    background: #32acb3;
+}
+
+/* //radio grid */

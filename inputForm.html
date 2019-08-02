@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- jquery -->
+    <script src="//code.jquery.com/jquery-3.2.1.min.js"></script>
+
+    <!-- css -->
+    <link rel="stylesheet" type="text/css" href="./css/inputForm.css">
+</head>
+
+<body>
+    <!-- range input -->
+    <div class="input-range">
+        <h3>range input</h3>
+        <p><span id="range-value"></span></p>
+        <input type="range" id="drive-range" min="2000" max="20000" step="1000" oninput="driveRangeHandler(this)" />
+    </div>
+    <!-- // range input -->
+
+    <div>
+        <h3>radio grid</h3>
+        <div class="wrapper">
+            <div class="grid-row">
+                <label class="flex-item">
+                    <input type="radio" value="critical" name="#"> <span></span>
+                </label>
+                <label class="flex-item">
+                    <input type="radio" value="high" name="#"> <span></span>
+                </label>
+                <label class="flex-item">
+                    <input type="radio" value="medium" name="#"> <span></span>
+                </label>
+                <label class="flex-item">
+                    <input type="radio" value="low" name="#"> <span></span>
+                </label>
+            </div>
+            <div class="grid-footer">
+                <div class="footer-item">1</div>
+                <div class="footer-item">2</div>
+                <div class="footer-item">3</div>
+                <div class="footer-item">4</div>
+            </div>
+        </div>
+        <div class="wrapper">
+            <div class="grid-row">
+                <label class="flex-item">
+                    <input type="radio" value="critical" name="#"> <span></span>
+                </label>
+                <label class="flex-item"></label>
+                <label class="flex-item"></label>
+                <label class="flex-item">
+                    <input type="radio" value="low" name="#"> <span></span>
+                </label>
+            </div>
+            <div class="grid-footer">
+                <div class="footer-item">1</div>
+                <div class="footer-item"></div>
+                <div class="footer-item"></div>
+                <div class="footer-item">2</div>
+            </div>
+        </div>
+        <div class="wrapper item_6">
+            <div class="grid-row">
+                <label class="flex-item">
+                    <input type="radio" value="critical" name="#"> <span></span>
+                </label>
+                <label class="flex-item">
+                    <input type="radio" value="low" name="#"><span></span>
+                </label>
+                <label class="flex-item">
+                    <input type="radio" value="low" name="#"><span></span>
+                </label>
+                <label class="flex-item">
+                    <input type="radio" value="low" name="#"><span></span>
+                </label>
+                <label class="flex-item">
+                    <input type="radio" value="low" name="#"><span></span>
+                </label>
+                <label class="flex-item">
+                    <input type="radio" value="low" name="#"> <span></span>
+                </label>
+            </div>
+            <div class="grid-footer">
+                <div class="footer-item">1</div>
+                <div class="footer-item">2</div>
+                <div class="footer-item">3</div>
+                <div class="footer-item">4</div>
+                <div class="footer-item">5</div>
+                <div class="footer-item">6</div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script>
+        // range-value
+        document.getElementById("range-value").innerHTML = document.getElementById("drive-range").value;
+        const driveRangeHandler = (ele) => {
+            document.getElementById("range-value").innerHTML = ele.value;
+        }
+
+        $("#drive-range").on("input", function (e) {
+            var val = ($(this).val() - $(this).attr('min')) / ($(this).attr('max') - $(this).attr('min'));
+            var percent = val * 100;
+
+            $(this).css('background-image',
+                '-webkit-gradient(linear, left top, right top, ' +
+                'color-stop(' + percent + '%, #32acb3), ' +
+                'color-stop(' + percent + '%, #eee)' +
+                ')');
+
+            $(this).css('background-image',
+                '-moz-linear-gradient(left center, #32acb3 0%, #32acb3 ' + percent + '%, #eee ' + percent + '%, #eee 100%)');
+        });
+        // range-value
+    </script>
+</body>
+
+</html>
