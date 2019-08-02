@@ -828,6 +828,10 @@
 }
 
 /* 로그인 */
+fieldset {
+  background: #e2e2e2;
+}
+
 #login_form {
   background: #f2f4f5;
   padding: 15px;
@@ -835,6 +839,8 @@
 
 .login_header {
   overflow: hidden;
+  font-size: 12px;
+  height: 30px;
 }
 
 .login_header .lh_check {
@@ -855,6 +861,37 @@
   text-decoration: underline;
 }
 
-.login_content {}
+.login_content {
+  position: relative;
+}
 
-.login_footer {}
+.login_content .lc_btn {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 62px;
+  height: 47px;
+  background: #ffffff;
+  border: 1px solid #bebebe;
+}
+
+.login_content .input_text {
+  width: 182px;
+  height: 16px;
+  padding: 2px 5px;
+  border: 1px solid #bebebe;
+  margin-bottom: 3px;
+  background: #ffffff;
+}
+
+.login_footer {
+  margin-top: 5px;
+}
+
+.login_footer li {
+  display: inline;
+}
+
+.login_footer li a {
+  font-size: 12px;
+}
