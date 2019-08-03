@@ -2,5 +2,9 @@
   // "prettier.disableLanguages": ["html"],
   "prettier.stylelintIntegration": true,
   // off시에 탭키로만 자동 완성
-  "editor.acceptSuggestionOnEnter": "off"
+  "editor.acceptSuggestionOnEnter": "off",
+  "editor.formatOnSave": true,
+  "[css]": {
+    "editor.formatOnSave": false
+  }
 }
