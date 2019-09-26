@@ -3,6 +3,10 @@
 <code>display:flex</code> 는 ie의 구버전에서는 지원이 되지 않아 사용하지 않았습니다.  
 기초적인 내용이라 실무에서 사용하는 코드와는 차이가 있습니다.
 
+# Deploy
+http://intro.anarky.ml/
+http://intro.anarky.ml/responsive/
+
 # layout 01
 
 <img width="300px" height="300px" src='/img/01.PNG' />
